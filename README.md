@@ -10,6 +10,7 @@ Open the below file.
 ```sss
 /path/to/config.php
 ```
+Define whether it is sandbox or live in the $sandbox variable and update your URL in the $domain variable.
 ```sss
 $host_split = explode('.',$_SERVER['HTTP_HOST']);
 $sandbox = $host_split[0] == 'sandbox' && $host_split[1] == 'domain' ? TRUE : FALSE;
